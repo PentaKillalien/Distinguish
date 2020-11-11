@@ -20,27 +20,27 @@
             </StackPanel>
             <StackPanel Height="25" Orientation="Horizontal">
                 <Label Content="图像长:" Width="80"></Label>
-                <TextBlock Text="{Binding ImageHeight}" Height="20" Width="450"></TextBlock>
+                <TextBox FontSize="10" Text="{Binding ImageHeight}" Height="20" Width="450"></TextBox>
             </StackPanel>
             <StackPanel Height="25" Orientation="Horizontal">
                 <Label Content="图像宽:" Width="80"></Label>
-                <TextBlock Text="{Binding ImageWidth}" Height="20" Width="450"></TextBlock>
+                <TextBox FontSize="10" Text="{Binding ImageWidth}" Height="20" Width="450"></TextBox>
             </StackPanel>
             <StackPanel Height="25" Orientation="Horizontal">
                 <Label Content="回形针面积:" Width="80"></Label>
-                <TextBlock Text="{Binding ClipAreas}" Height="20" Width="450"></TextBlock>
+                <TextBox FontSize="10" Text="{Binding ClipAreas}" Height="20" Width="450"></TextBox>
             </StackPanel>
             <StackPanel Height="25" Orientation="Horizontal">
                 <Label Content="中点x坐标:" Width="80"></Label>
-                <TextBlock Text="{Binding ClipXs}" Height="20" Width="450"></TextBlock>
+                <TextBox FontSize="10" Text="{Binding ClipXs}" Height="20" Width="450"></TextBox>
             </StackPanel>
             <StackPanel Height="25" Orientation="Horizontal">
                 <Label Content="中点y坐标:" Width="80"></Label>
-                <TextBlock Text="{Binding ClipYs}" Height="20" Width="450"></TextBlock>
+                <TextBox FontSize="10" Text="{Binding ClipYs}" Height="20" Width="450"></TextBox>
             </StackPanel>
             <StackPanel Height="25" Orientation="Horizontal">
                 <Label Content="回形针个数:" Width="80"></Label>
-                <TextBlock Text="{Binding ClipCount}" Height="20" Width="450"></TextBlock>
+                <TextBox FontSize="10" Text="{Binding ClipCount}" Height="20" Width="450"></TextBox>
             </StackPanel>
         </StackPanel>
         <Grid.RowDefinitions>

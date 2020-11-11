@@ -96,11 +96,12 @@ public partial class HDevelopExport
     // Default settings used in HDevelop
     HOperatorSet.SetSystem("width", 512);
     HOperatorSet.SetSystem("height", 512);
-    clipData = new ClipData();
+    
   }
 
   public ClipData RunHalcon(HTuple Window)
   {
+    clipData = new ClipData();
     hv_ExpDefaultWinHandle = Window;
     action();
         if (clipData!=null) {

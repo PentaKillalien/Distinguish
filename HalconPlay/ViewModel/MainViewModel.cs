@@ -1,5 +1,6 @@
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.CommandWpf;
+using HalconPlay.Model;
 using System.Windows;
 
 namespace HalconPlay.ViewModel
@@ -18,12 +19,11 @@ namespace HalconPlay.ViewModel
     /// </summary>
     public class MainViewModel : ViewModelBase
     {
-        /// <summary>
-        /// Initializes a new instance of the MainViewModel class.
-        /// </summary>
+        
+        public ClipData clipData { get; set; }
         public MainViewModel()
         {
-           
+            clipData = new ClipData();
         }
         private string imagePath = string.Empty;
         /// <summary>
@@ -61,8 +61,18 @@ namespace HalconPlay.ViewModel
             {
                 MessageBox.Show("«Î—°‘ÒÕº∆¨");
             }
-            else { 
+            else {
+                HDevelopExport hde = new HDevelopExport(ImagePath);
+                clipData=  hde.RunHalcon(hde.hv_ExpDefaultWinHandle);
+            if (clipData != null) {
+                    ImageHeight = clipData.ImageHeight;
+                    ImageWidth = clipData.ImageWidth;
+                    ClipAreas = clipData.ClipAreas;
+                    ClipXs = clipData.ClipXs;
+                    ClipYs = clipData.ClipYs;
+                    ClipCount = clipData.ClipCount;
                 
+                }
             }
         });
 
