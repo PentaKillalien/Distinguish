@@ -59,7 +59,7 @@ namespace HalconPlay.ViewModel
         {
             if (string.IsNullOrEmpty(ImagePath))
             {
-                MessageBox.Show("«Î—°‘ÒÕº∆¨");
+                MessageBox.Show("«Î—°‘ÒÕº∆¨≈∂");
             }
             else {
                 HDevelopExport hde = new HDevelopExport(ImagePath);
